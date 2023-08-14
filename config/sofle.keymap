@@ -12,22 +12,13 @@
 #define EXT_POWER_OFF_CMD 0
 
 / {
-    behaviors {
-        left_encoder: encoder_left {
-            compatible = "alps,ec11";
-            label = "LEFT_ENCODER";
-            a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-            b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-            steps = <80>;
-        };
-    };
     keymap {
         compatible = "zmk,keymap";
-        //sensors {
-        //    compatible = "zmk,keymap-sensors";
-        //    sensors = <&left_encoder &right_encoder>;
-        //    triggers-per-rotation = <20>;
-        //};
+        sensors {
+            compatible = "zmk,keymap-sensors";
+            sensors = <&left_encoder &right_encoder>;
+            triggers-per-rotation = <20>;
+        };
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |  `    |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   -   |
