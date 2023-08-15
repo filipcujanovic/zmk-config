@@ -15,7 +15,7 @@
     left_encoder: encoder_left {
         compatible = "alps,ec11";
         label = "LEFT_ENCODER";
-        steps = <15>;
+        steps = <30>;
     };
     sensors {
         compatible = "zmk,keymap-sensors";
