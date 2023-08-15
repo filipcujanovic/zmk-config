@@ -11,16 +11,16 @@
 
 #define EXT_POWER_OFF_CMD 0
 
+&left_encoder {
+    status = "okay";
+    resolution = <2>;
+}
+
+
 / {
-    left_encoder: encoder_left {
-        compatible = "alps,ec11";
-        label = "LEFT_ENCODER";
-        steps = <30>;
-    };
     sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <30>;
     };
     keymap {
         compatible = "zmk,keymap";
