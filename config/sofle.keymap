@@ -14,7 +14,7 @@
 &left_encoder {
     status = "okay";
     resolution = <2>;
-}
+};
 
 
 / {
