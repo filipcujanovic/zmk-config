@@ -14,13 +14,13 @@
 };
 
 &right_encoder {
-    steps = <40>;
+    steps = <60>;
 };
 
 / {
-    //sensors {
-    //    triggers-per-rotation = <30>;
-    //};
+    sensors {
+        triggers-per-rotation = <30>;
+    };
     keymap {
         compatible = "zmk,keymap";
         default_layer {
