@@ -18,9 +18,9 @@
 };
 
 / {
-    sensors {
-        triggers-per-rotation = <30>;
-    };
+    //sensors {
+    //    triggers-per-rotation = <30>;
+    //};
     keymap {
         compatible = "zmk,keymap";
         default_layer {
