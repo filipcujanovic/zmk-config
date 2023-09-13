@@ -21,10 +21,6 @@
     steps = <60>;
 };
 
-&led_strip {
-    chain-length = <58>;
-};
-
 / {
     sensors {
         triggers-per-rotation = <30>;
@@ -72,16 +68,16 @@
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |          |       |      |       |       |
-// |POWER| INS  | PSCR | GUI   |       |      |                | PGUP | PREVIOUS |   ^   | NEXT |       |       |
-// |     | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <-     |   v   |  ->  |  DEL  | BKSPC |
-// |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |          |       |      |       |       |
-//              |      |       |       |      |      |  |      |      |          |       |      |
+// |BTCLR        | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |          |       |      |       |       |
+// |ext power off|      |      |       |       |      |                | PGUP | PREVIOUS |   ^   | NEXT |       |       |
+// |             |      |      |       |       | CAPS |                | PGDN |   <-     |   v   |  ->  |  DEL  | BKSPC |
+// |    POWER    | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |          |       |      |       |       |
+//               |      |      |       |       |      |      |  |      |      |       |      |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans    &trans   &trans    &trans  &trans
-&kp C_POWER     &kp INS      &kp PSCRN    &ext_power EP_OFF  &ext_power EP_ON       &trans                   &kp PG_UP &kp C_PREVIOUS &kp UP   &kp C_NEXT    &kp N0  &trans
-&trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
-&trans     &kp C_AC_UNDO   &kp C_AC_CUT    &kp C_AC_COPY   &kp C_AC_PASTE  &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &none    &none    &none   &none    &none  &none
+&ext_power EP_OFF     &none      &none    &none  &none       &none                   &kp PG_UP &kp C_PREVIOUS &kp UP   &kp C_NEXT    &kp N0  &trans
+&none     &none     &none    &kp LGUI(LSHFT(N4))    &kp LGUI(LSHFT(N5))       &kp CLCK       &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
+&kp C_POWER     &kp LGUI(LSHFT(Z))   &kp LGUI(X)    &kp LGUI(C)   &kp LGUI(V)  &trans  &trans   &none  &none    &none    &none   &none    &none  &trans
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
             >;
 
