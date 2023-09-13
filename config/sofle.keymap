@@ -10,11 +10,11 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 &left_encoder {
-    steps = <120>;
+    steps = <60>;
 };
 
 &right_encoder {
-    steps = <120>;
+    steps = <60>;
 };
 
 / {
@@ -38,9 +38,8 @@
                  &kp LCTRL &kp LALT &kp LGUI &mo 1  &kp RET    &kp SPACE &mo 2  &kp RGUI &kp RALT  &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREVIOUS>;
-            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREVIOUS>;
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
         };
 
         lower_layer {
@@ -59,9 +58,8 @@
                     &trans    &trans      &trans    &trans    &trans   &trans &trans    &trans   &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREVIOUS>;
-            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREVIOUS>;
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
         };
 
         raise_layer {
@@ -79,9 +77,8 @@
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREVIOUS>;
-            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREVIOUS>;
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
         };
     };
 };
