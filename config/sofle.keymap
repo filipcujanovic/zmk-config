@@ -76,8 +76,8 @@
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &none    &none    &none   &none    &none  &none
 &ext_power EP_OFF     &none      &none    &none  &none       &none                   &kp PG_UP &kp C_PREVIOUS &kp UP   &kp C_NEXT    &kp N0  &trans
-&none     &none     &none    &kp LG(LS(N4))    &kp LG(LS(N5))       &kp CLCK       &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
-&kp C_POWER  &kp LG(LS(Z))   &kp LG(X)    &kp LG(C)   &kp LG(V)  &trans  &trans   &none  &none    &none    &none   &none    &none  &trans
+&none     &kp C_POWER     &none    &kp LG(LS(N4))    &kp LG(LS(N5))       &kp CLCK       &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
+&trans  &kp LG(LS(Z))   &kp LG(X)    &kp LG(C)   &kp LG(V)  &trans  &trans   &none  &none    &none    &none   &none    &none  &trans
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
             >;
 
@@ -86,3 +86,5 @@
         };
     };
 };
+
+lskadjfklsadjFDDSFSAAF
