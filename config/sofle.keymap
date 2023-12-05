@@ -83,8 +83,8 @@
 //         |       |      |          |        |      |      |  |      |      |          |       |
             bindings = <
 &none      &none           &none        &none              &none             &none                      &none       &none       &none       &none       &none       &none
-&none      &none           &none        &none              &none             &none                      &none       &none       &kp UP       &none       &none       &none
-&none      &none           &none        &kp LG(LS(N4))     &kp LG(LS(N5))    &kp CLCK                   &none       &kp LEFT    &kp DOWN    &kp RIGHT   &kp DEL     &kp BSPC
+&none      &none           &none        &none              &none             &none                      &none       &none       &none       &none       &none       &none
+&none      &none           &none        &kp LG(LS(N4))     &kp LG(LS(N5))    &kp CLCK                   &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT   &kp DEL     &kp BSPC
 &trans     &kp LG(LS(Z))   &kp LG(X)    &kp LG(C)          &kp LG(V)         &trans    &trans   &trans  &none       &none       &none       &none       &none       &trans
                            &trans       &trans             &trans            &trans    &trans   &trans  &trans      &trans      &trans      &trans
             >;
@@ -94,9 +94,9 @@
         };
         adjust_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |BTCLR        | BT1   | BT2  |  BT3  |  BT4  |  BT5 |                |      |       |       |      |       |       |
 // |ext power off|       |      |       |       |      |                |      |       |       |      |       |       |
 // |             |       |      |       |       |      |                |      |       |       |      |       |       |
+// | BTCLR       |  BT1  | BT2  |  BT3  |  BT4  | BT5  |                |      |       |       |      |       |       |
 // |             |       |      |       |       |      |      |  |      |      |       |       |      |       |       |
 //               |       |      |       |       |      |      |  |      |      |       |       |
             bindings = <
