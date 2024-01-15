@@ -13,6 +13,7 @@
 #define LOWER   1
 #define RAISE   2
 #define ADJUST  3
+#define HYPER(key) LS(LC(LA(LG(key))))
 
 &left_encoder {
     steps = <60>;
@@ -76,17 +77,17 @@
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |       |       |      |          |        |      |                |      |          |       |      |       |       |
-// |       |       |      |          |        |      |                |      |          |   ^   |      |       |       |
-// |       |       |      |screenshot| scrsht | CAPS |                |      |   <-     |   v   |  ->  |  DEL  | BKSPC |
-// |       | UNDO  | CUT  |   COPY   |  PASTE |      |      |  |      |      |          |       |      |       |       |
-//         |       |      |          |        |      |      |  |      |      |          |       |
+// |       |         |         |          |        |      |                |      |          |       |      |       |       |
+// |       |         |         |          |        |      |                |      |          |   ^   |      |       |       |
+// |       |HYPER + 1|HYPER + 2|screenshot| scrsht | CAPS |                |      |   <-     |   v   |  ->  |  DEL  | BKSPC |
+// |       | UNDO    | CUT     |   COPY   |  PASTE |      |      |  |      |      |          |       |      |       |       |
+//         |         |         |          |        |      |      |  |      |      |          |       |
             bindings = <
-&none      &none           &none        &none              &none             &none                      &none       &none       &none       &none       &none       &none
-&none      &none           &none        &none              &none             &none                      &none       &none       &none       &none       &none       &none
-&none      &none           &none        &kp LG(LS(N4))     &kp LG(LS(N5))    &kp CLCK                   &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT   &kp DEL     &kp BSPC
-&trans     &kp LG(LS(Z))   &kp LG(X)    &kp LG(C)          &kp LG(V)         &trans    &trans   &trans  &none       &none       &none       &none       &none       &trans
-                           &trans       &trans             &trans            &trans    &trans   &trans  &trans      &trans      &trans      &trans
+&none      &none           &none         &none              &none             &none                      &none       &none       &none       &none       &none       &none
+&none      &none           &none         &none              &none             &none                      &none       &none       &none       &none       &none       &none
+&none      &kp HYPER(N1)   &kp HYPER(N2) &kp LG(LS(N4))     &kp LG(LS(N5))    &kp CLCK                   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL     &kp BSPC
+&trans     &kp LG(LS(Z))   &kp LG(X)     &kp LG(C)          &kp LG(V)         &trans    &trans   &trans  &none       &none       &none       &none       &none       &trans
+                           &trans        &trans             &trans            &trans    &trans   &trans  &trans      &trans      &trans      &trans
             >;
 
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREVIOUS>;
