@@ -29,13 +29,6 @@
     quick-tap-ms = <150>;
 };
 
-&usbd {
-    status = "okay";
-    cdc_acm_uart: cdc_acm_uart {
-        compatible = "zephyr,cdc-acm-uart";
-    };
-};
-
 / {
     behaviors {
         shifty: shift_caps_word {
@@ -60,15 +53,12 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
     sensors {
         triggers-per-rotation = <30>;
-    };
-    chosen {
-        zephyr,console = &cdc_acm_uart;
     };
     keymap {
         compatible = "zmk,keymap";
