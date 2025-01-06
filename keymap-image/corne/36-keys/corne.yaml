@@ -31,23 +31,23 @@ layers:
   - C
   - V
   - B
+  - ''
+  - ''
   - N
   - M
   - ','
   - .
   - /
-  - ''
-  - ''
   - {t: ESC, h: symbol}
   - {t: RET, h: number}
-  - SPACE
+  - {t: SPACE, h: BSPC}
   - {t: BSPC, h: navigation}
-  - TAB
+  - {t: TAB, h: bluetooth}
   number:
   - ''
   - ''
   - ''
-  - ''
+  - TAB
   - ''
   - ''
   - ''
@@ -69,10 +69,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - Gui+ Z
+  - Gui+ X
+  - Gui+ C
+  - Gui+ V
   - ''
   - '0'
   - '1'
@@ -91,8 +91,8 @@ layers:
   - '`'
   - _
   - ''''
+  - '"'
   - '|'
-  - ''
   - ''
   - <
   - '>'
@@ -131,8 +131,8 @@ layers:
   - {t: ▽, type: trans}
   navigation:
   - ''
-  - BT CLR
-  - '&bootloader'
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -155,6 +155,49 @@ layers:
   - AGr+ BSPC
   - ''
   - ''
+  - Gui+ Z
+  - Gui+ X
+  - Gui+ C
+  - Gui+ V
+  - ''
+  - ''
+  - BRIGHTNESS DEC
+  - BRIGHTNESS INC
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  bluetooth:
+  - ''
+  - BT CLR
+  - '&bootloader'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -170,5 +213,5 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
