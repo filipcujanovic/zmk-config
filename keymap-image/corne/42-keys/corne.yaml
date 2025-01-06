@@ -38,12 +38,12 @@ layers:
   - /
   - RALT
   - LGUI
-  - lower
+  - symbol
   - RET
   - SPACE
-  - raise
+  - navigation
   - RGUI
-  lower:
+  symbol:
   - '`'
   - '1'
   - '2'
@@ -64,14 +64,14 @@ layers:
   - '%'
   - ^
   - '&'
-  - '*'
+  - KP MULTIPLY
   - (
   - )
   - '|'
   - {t: ▽, type: trans}
   - '='
   - '-'
-  - +
+  - KP PLUS
   - '{'
   - '}'
   - '['
@@ -86,8 +86,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
-  - ''
+  navigation:
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -104,19 +104,19 @@ layers:
   - Hyper+ 2
   - Gui+Sft+ 4
   - Gui+Sft+ 5
-  - CLCK
+  - ''
   - LEFT
   - DOWN
   - UP
   - RIGHT
-  - DEL
-  - BSPC
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
+  - AGr+ BSPC
   - ''
   - {t: ▽, type: trans}
+  - Gui+ Z
+  - Gui+ X
+  - Gui+ C
+  - Gui+ V
+  - ''
   - ''
   - BRIGHTNESS DEC
   - BRIGHTNESS INC
@@ -129,18 +129,18 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  adjust:
-  - EP OFF
+  bluetooth:
+  - ''
+  - ''
+  - '&bootloader'
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - '7'
-  - '8'
-  - '9'
-  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
   - ''
   - BT CLR
   - {t: BT, h: '0'}
@@ -148,10 +148,11 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - '0'
-  - '4'
-  - '5'
-  - '6'
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
   - ''
   - ''
   - ''
@@ -159,12 +160,11 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - '1'
-  - '2'
-  - '3'
-  - ''
+  - F11
+  - F12
+  - F13
+  - F14
+  - F15
   - ''
   - {t: ▽, type: trans}
   - {type: held}
