@@ -36,12 +36,12 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <2 3>;
+            key-positions = <3 4>;
             bindings = <&kp ESC>;
         };
         combo_grave {
             timeout-ms = <50>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             bindings = <&kp GRAVE>;
         };
     };
