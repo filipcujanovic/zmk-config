@@ -1,103 +1,19 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  default:
+  default: ['', Q, W, E, R, T, Y, U, I, O, P, '', '', A, S, D, F, G, H, J, K, L, ;, '', '', Z, X, C, V, B, N, M, ',', ., /, '', ESC, symbol, RET, SPACE, navigation,
+    BSPC]
+  symbol:
   - ''
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - ''
-  - ''
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''
-  - ''
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ''
-  - ESC
-  - symbol
-  - {t: RET, h: number}
-  - SPACE
-  - navigation
-  - BSPC
-  number:
-  - ''
-  - ''
-  - ''
-  - TAB
-  - ''
-  - ''
-  - ''
-  - '7'
-  - '8'
-  - '9'
-  - ''
-  - ''
-  - ''
-  - {t: LALT, h: LALT}
-  - {t: LCTRL, h: LCTRL}
-  - {t: LGUI, h: LGUI}
-  - '&shifty'
-  - ''
-  - ''
-  - '4'
-  - '5'
-  - '6'
-  - ''
-  - ''
-  - ''
-  - Gui+ Z
-  - Gui+ X
-  - Gui+ C
-  - Gui+ V
-  - ''
-  - '0'
   - '1'
   - '2'
   - '3'
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  symbol:
-  - ''
-  - '`'
-  - _
-  - ''''
-  - '"'
-  - '|'
-  - '?'
-  - <
-  - '>'
-  - '~'
-  - ''
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - ''
   - ''
   - '!'
@@ -215,3 +131,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
+combos:
+- p: [2, 3]
+  k: ESC
+- p: [1, 2]
+  k: '`'
